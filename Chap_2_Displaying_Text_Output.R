@@ -40,7 +40,7 @@ server <- function(input, output) {
   # Create scatterplot
   output$scatterplot <- renderPlot({
     ggplot(data = movies, aes_string(x = input$x, y = input$y)) +
-      geom_point()
+      geom_point() + geom_smooth()
   })
   
   # Calculate average of x

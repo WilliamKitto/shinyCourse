@@ -2,8 +2,8 @@ library(shiny)
 library(ggplot2)
 #load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4850/datasets/movies.Rdata"))
 require(tigerstats)
-data(ucdavis1)
-mydata <- ucdavis1 # just plug in your data here
+data(pushups)
+mydata <- pushups # just plug in your data here
 
 # Define UI for application that plots features of movies
 ui <- fluidPage(
